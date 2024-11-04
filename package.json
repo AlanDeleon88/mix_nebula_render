@@ -9,7 +9,8 @@
     "dev:backend" : "npm install --prefix project_src/backend start",
     "sequelize" : "npm run --prefix project_src/backend sequelize",
     "sequelize-cli" : "npm run --prefix project_src/backend sequelize-cli",
-    "start" : "npm start --prefix project_src/backend"
+    "start" : "npm start --prefix project_src/backend",
+    "build": "npm run --prefix backend build"
   },
   "keywords": [],
   "author": "",
