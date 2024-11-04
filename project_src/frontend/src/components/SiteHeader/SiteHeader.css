@@ -1,0 +1,13 @@
+.nav-container{
+    width: 60%;
+    position: absolute;
+    /* border: 1px solid red; */
+}
+
+.header{
+    display: flex;
+    /* border: 1px solid blue; */
+    justify-content: center;
+    width:80%;
+    height: 75px;
+}

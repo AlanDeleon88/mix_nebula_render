@@ -1,0 +1,13 @@
+.featured-albums-container{
+    /* border: solid 1px red; */
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.featured-albums-header{
+    font-size: 1.4vw;
+}

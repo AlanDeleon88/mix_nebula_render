@@ -1,0 +1,74 @@
+.album-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 720px;
+
+}
+
+@media only screen and (max-width: 500px) {
+    .album-container{
+        width: 350px;
+    }
+
+    .link-title{
+        font-size: 15px;
+    }
+
+}
+
+.album-list-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 75px;
+
+
+}
+
+.link-title{
+    text-decoration: none;
+    font-size: 30px;
+    margin-left : 20px;
+    color: blue;
+}
+
+.link-title:active{
+    color:blue;
+    transform: scale(.90);
+}
+
+.album-controls{
+    display: flex;
+    justify-content: space-around;
+}
+
+.delete-album{
+    margin-right: 10px;
+    width: fit-content;
+    font-size: 30px;
+    border: 1px solid black;
+}
+
+.delete-album:active{
+    color: white;
+    background-color: black;
+}
+
+.edit-album{
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    border: 1px solid black;
+    height: fit-content;
+    width: fit-content;
+    color: red;
+
+}
+
+.edit-album:active{
+    color:blue;
+    transform: scale(.90);
+}

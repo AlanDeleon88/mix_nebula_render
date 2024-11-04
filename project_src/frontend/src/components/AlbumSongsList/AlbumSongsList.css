@@ -1,0 +1,83 @@
+.album-songs-container{
+    display: flex;
+    justify-content: flex-start;
+    width:720px;
+}
+
+.album-song-table{
+    border: 2px solid grey;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 30px;
+    margin-top: 30px;
+
+}
+
+.album-header{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 720px;
+    height: 250px;
+}
+
+.album-img {
+    position:absolute;
+    width: 720px;
+    height: inherit;
+    z-index: -1;
+}
+.artist-header{
+    margin-left: 10px;
+
+    color:white;
+}
+
+.album-desc{
+    color: white;
+    margin-left: 10px;
+}
+
+.album-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-size: 45px;
+    margin-left: 10px;
+    color: white;
+}
+
+.song-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid grey;
+    border-collapse: collapse;
+    font-size: 20px;
+    height: 50px;
+
+}
+.song-item:active{
+    color: white;
+    background-color: black;
+}
+
+@media only screen and (max-width: 500px) {
+    .album-header{
+        width: 350px;
+    }
+
+    .song-item{
+        font-size: 15px;
+    }
+
+}
+
+.add-song-modal{
+    width: fit-content;
+
+}

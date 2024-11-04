@@ -1,0 +1,35 @@
+.music-controls-main-container{
+    display: flex;
+    width: 80%;
+    height: 100%;
+    /* border: solid 1px red; */
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5vw;
+    margin-left: 60px;
+    margin-top:3px;
+}
+
+
+
+.music-controls-pause{
+    cursor: pointer;
+    color:#a48be9;
+}
+
+.music-controls-play{
+    cursor: pointer;
+}
+
+.music-controls-next-track{
+    cursor: pointer;
+}
+
+.music-controls-prev-track{
+    cursor: pointer;
+}
+
+.music-controls-active:active{
+    transform: scale(.95);
+    color:#1a035a;
+}

@@ -1,0 +1,134 @@
+.user-page-header-container{
+    /* border: solid 1px pink; */
+    width:85%;
+    height: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom:20px;
+
+}
+
+.user-page-profile-pic-container{
+    padding: 30px;
+    /* border: solid 1px green; */
+    /* width: 50%; */
+    display: flex;
+    align-items: center;
+
+}
+
+.user-page-profile-pic{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    position: relative;
+    /* bottom: 50px */
+}
+
+.user-page-cover-img-container{
+    border: solid 1px skyblue;
+    width: 60%;
+    height: 35%;
+
+    /* height: 35%; */
+}
+
+.user-page-cover-img{
+    width:60%;
+    height:25%;
+    position: absolute;
+    object-fit:fill;
+    z-index: -17;
+
+    /* background-position: 0 0; */
+}
+
+.user-page-cover-place-holder{
+    width:80%;
+    height: 35%;
+    position: absolute;
+    background: linear-gradient(to left top, rgb(26, 3, 90), 	#2f2b3b);
+    z-index: -1;
+}
+
+.user-page-edit-cover-container{
+    /* border: solid 1px white; */
+    height:100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.edit-profile-pic-button{
+    position: relative;
+    bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    /* background-color: red; */
+    opacity: 0;
+    padding: 3px;
+    transition: .3s;
+}
+
+.placeholder{
+    /* opacity: 0; */
+    z-index: -7;
+}
+
+.edit-button-placeholder{
+    width: 60%;
+    height: 20%;
+    border:solid 4px pink;
+    position: relative;
+    bottom: 40px;
+    opacity: 0;
+
+}
+
+.edit-cover-button{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: .3s;
+    padding: 3px;
+}
+
+.user-page-profile-edit-container:hover > .edit-profile-pic-button{
+    /* background-color: red; */
+    opacity: 100%;
+}
+
+.user-page-profile-edit-container:hover > .placeholder{
+    /* background-color: red; */
+    opacity: 0;
+}
+
+.user-page-edit-cover-container:hover > .edit-cover-button{
+    opacity: 100%;
+}
+
+
+.user-page-profile-edit-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.user-page-username-container{
+    background-color:  	#110e1a;
+    padding: 15px;
+    opacity: 90%;
+    margin-bottom: 80px;
+    margin-left: 40px;
+    /* width: 70%; */
+    /* position: relative; */
+    /* right: 350px; */
+
+}

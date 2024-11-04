@@ -1,0 +1,124 @@
+.featured-list-main-container{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.347);
+}
+
+.featured-list-container{
+    display: flex;
+    flex-direction: column;
+    /* border:1px solid; */
+    width: 600px;
+    height: 175px;
+    justify-content: center;
+    /* margin-left: 80px; */
+    margin-bottom: 15px;
+    margin-top: 15px;
+    background: linear-gradient(to left top, rgb(227, 44, 169), 	#211054);
+}
+
+.featured-playlist-container{
+    display: flex;
+    flex-direction: column;
+    /* border:1px solid; */
+    width: 600px;
+    height: 175px;
+    justify-content: center;
+    /* margin-left: 80px; */
+    margin-bottom: 15px;
+    margin-top: 15px;
+    background: linear-gradient(to left top, rgb(27, 20, 230), 	#6b52b5ac);
+}
+
+.featured-list-img-bundle{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+.featured-playlist-img{
+    margin-left:20px;
+}
+
+.featured-list-img{
+    height:150px;
+    width:150px;
+    margin-left:20px;
+}
+
+.card-controls-pause-play{
+    height: 0px;
+    width: 0px;
+    position: relative;
+    left: 70px;
+    /* top: 10px; */
+    bottom: 100px;
+    opacity: 75%;
+    z-index: 5;
+    cursor: pointer;
+    /* border: 1px solid red; */
+
+}
+
+
+.featured-list-img-song-list-container{
+    display: flex;
+}
+
+.featured-list-song-list{
+    overflow-y: scroll;
+    overflow-x:hidden;
+    /* border: solid 1px pink; */
+    height: 150px;
+    width: 65%;
+}
+
+.featured-list-user{
+    display: flex;
+    align-items: center;
+}
+.featured-list-user-picture{
+    height:40px;
+    width:40px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+
+.featured-list-link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.featured-list-link-button{
+    height: 30px;
+    width: 100px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.featured-list-title-bundle{
+    display:flex;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.featured-list-title{
+    margin-right: 5px;
+    font-size: 1.3vw;
+}
+
+.featured-list-username{
+    color:grey;
+}
+
+
+
+.featured-list-user-pic-bundle{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.featured-list-user-pic-bundle:hover > div{
+    color:white;
+}

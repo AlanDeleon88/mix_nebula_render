@@ -1,0 +1,166 @@
+:root{
+    --white: #fff;
+    --active-color: #00aeb0;
+}
+
+.music-player-main-container{
+    width: 100%;
+    height: 50px;
+    color: var(--white);
+    display: flex;
+    /* border: solid 1px skyblue; */
+    justify-content: center;
+    background-color: #2f2b3b;
+}
+
+.music-player-main-controls-container{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    /* border: 1px solid; */
+}
+
+.music-player-controls-container{
+    width: 25%;
+    /* border:solid 1px green; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.music-player-song-info-container{
+    display: flex;
+    align-items: center;
+    /* border: solid 2px lightgreen; */
+    width: 15%;
+}
+
+
+
+.music-player-text-container{
+    display: flex;
+    flex-direction: column;
+    /* border: solid 1px blue; */
+    color: white;
+    font-size:13px;
+    margin-left: 5px;
+}
+
+.music-player-artist-album{
+    display: flex;
+    /* align-items: center; */
+    /* border: solid 1px green; */
+
+}
+
+.music-player-song-art-container{
+    display: flex;
+    align-items: center;
+}
+
+.music-player-art{
+    height: 40px;
+    width: 40px;
+
+}
+
+.progress{
+    width: 90%;
+}
+
+.music-player-seeker-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column-reverse; */
+    /* border: solid 1px; */
+    margin-top: 3px;
+    margin-right: 20px;
+    width: 55%;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+     background: transparent;
+     cursor: pointer;
+     width: 90%;
+  }
+
+  input[type="range"]::-webkit-slider-runnable-track {
+    /* background:#1a035a; */
+    border-radius: 10px;
+    height: 1rem;
+  }
+  /* input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: red;
+    height: 2rem;
+  } */
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    /* margin-top: -12px; Centers thumb on the track */
+    /* margin-top:-12px; */
+    background-color: #ccbff1;
+    columns: black;
+    height: 1rem;
+    border-radius: 100%;
+    width: 1rem;
+ }
+
+ .volume-slide-container{
+    display: flex;
+    flex-direction: column;
+    /* overflow: visible; */
+    width: 150px;
+    /* height:100%; */
+    /* position: absolute; */
+    /* left:12%; */
+    align-items: center;
+    /* justify-content: center; */
+    /* font-size: 30px; */
+    /* border: solid 1px white; */
+    /* margin-top: 3px; */
+
+
+}
+
+
+.volume-slider{
+    -webkit-transform:rotate(-90deg);
+    position: relative;
+    bottom:50px;
+    width: 100px;
+    /* border: 1px solid white; */
+
+
+}
+.volume-place-holder{
+    -webkit-transform:rotate(-90deg);
+    position: relative;
+    bottom:65px;
+    opacity: 0;
+}
+
+.volume-button{
+    position: relative;
+    bottom: 12px;
+    font-size: 30px;
+    /* border:solid 1px green */
+    cursor: pointer;
+}
+
+.music-player-song-title{
+    font-size:1.1vw;
+}
+
+.music-player-artist{
+    color: grey;
+    cursor: pointer;
+}
+
+.music-player-artist:hover{
+    color: white;
+}
