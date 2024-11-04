@@ -7,6 +7,13 @@ const {Op} = require('sequelize');
 const {getRandomIntInclusive} = require('../../utils/getRandomInt');
 const { faker } = require('@faker-js/faker');
 
+
+let options = {};
+if (process.env.NODE_ENV === 'production') {
+  options.schema = process.env.SCHEMA
+}
+
+
 const comments =
 [
   {
@@ -136,7 +143,8 @@ module.exports = {
      * Example:
      * await queryInterface.bulkDelete('People', null, {});
      */
-     const Op = Sequelize.Op;
-     return queryInterface.bulkDelete('Comments', null , { truncate: true, cascade: true });
+    const Op = Sequelize.Op;
+    options.tableName = 'Comments'
+     return queryInterface.bulkDelete(options, null , { truncate: true, cascade: true });
   }
 };

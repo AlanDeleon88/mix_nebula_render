@@ -1,6 +1,13 @@
 'use strict';
 const { getRandomIntInclusive } = require('../../utils/getRandomInt');
 const { PlaylistSong, Playlist, Song } = require('../models');
+
+let options = {};
+if (process.env.NODE_ENV === 'production') {
+  options.schema = process.env.SCHEMA
+}
+
+
 const playlistSongData =
 [
   {
@@ -133,7 +140,8 @@ module.exports = {
      * Example:
      * await queryInterface.bulkDelete('People', null, {});
      */
-     const Op = Sequelize.Op;
-     return queryInterface.bulkDelete('PlaylistSongs', null, { truncate: true, cascade: true });
+    const Op = Sequelize.Op;
+    options.tableName = 'PlaylistSongs'
+     return queryInterface.bulkDelete(options, null, { truncate: true, cascade: true });
   }
 };

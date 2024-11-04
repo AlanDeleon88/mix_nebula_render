@@ -3,6 +3,10 @@ const { User, Album, Song } = require('../models');
 const {faker} = require('@faker-js/faker')
 const {getRandomIntInclusive} = require('../../utils/getRandomInt')
 
+let options = {};
+if (process.env.NODE_ENV === 'production') {
+  options.schema = process.env.SCHEMA
+}
 
 const songs = [
   {
@@ -325,7 +329,8 @@ module.exports = {
      * await queryInterface.bulkDelete('People', null, {});
      */
 
-     const Op = Sequelize.Op;
-     return queryInterface.bulkDelete('Songs',null, { truncate: true, cascade: true });
+    const Op = Sequelize.Op;
+    options.tableName = 'Songs'
+     return queryInterface.bulkDelete(options,null, { truncate: true, cascade: true });
   }
 };

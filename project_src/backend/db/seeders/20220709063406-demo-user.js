@@ -3,6 +3,11 @@ const  bcrypt = require('bcryptjs');
 const {faker} = require('@faker-js/faker');
 const { getRandomIntInclusive } = require('../../utils/getRandomInt');
 
+let options = {};
+if (process.env.NODE_ENV === 'production') {
+  options.schema = process.env.SCHEMA
+}
+
 
 let sampleUsers = [
   {
@@ -160,7 +165,8 @@ module.exports = {
      * await queryInterface.bulkDelete('People', null, {});
      */
     const Op = Sequelize.Op;
-    return queryInterface.bulkDelete('Users', {
+    options.tableName = 'Users'
+    return queryInterface.bulkDelete(options, {
       // id : {[Op.in] : [1,2,3,4,5,6,7,8,9]}
     }, { truncate: true, cascade: true });
   }
