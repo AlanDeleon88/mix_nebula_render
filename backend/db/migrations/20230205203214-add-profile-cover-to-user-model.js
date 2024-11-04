@@ -14,7 +14,7 @@ module.exports = {
      * Example:
      * await queryInterface.createTable('users', { id: Sequelize.INTEGER });
      */
-    await queryInterface.addColumn('Users','profile_cover',
+    await queryInterface.addColumn(options,'profile_cover',
     {
       type: Sequelize.STRING,
       allowNull: true,

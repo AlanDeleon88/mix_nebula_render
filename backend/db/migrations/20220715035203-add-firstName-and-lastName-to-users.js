@@ -14,17 +14,15 @@ module.exports = {
      * Example:
      * await queryInterface.createTable('users', { id: Sequelize.INTEGER });
      */
-    await queryInterface.addColumn('Users','firstName',
-    {
+    await queryInterface.addColumn(options, 'firstName', {
       type: Sequelize.STRING(20),
-      allowNull: false,
+      allowNull: false
+    }, options);
 
-    }, options)
-    await queryInterface.addColumn('Users', 'lastName',
-    {
+    await queryInterface.addColumn(options, 'lastName', {
       type: Sequelize.STRING(30),
       allowNull: false
-    }, options)
+    }, options);
 
   },
 
