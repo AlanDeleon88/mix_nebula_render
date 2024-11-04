@@ -4,6 +4,7 @@ const {faker} = require('@faker-js/faker');
 const { getRandomIntInclusive } = require('../../utils/getRandomInt');
 
 let options = {};
+options.tableName = 'Users'
 if (process.env.NODE_ENV === 'production') {
   options.schema = process.env.SCHEMA
 }
@@ -154,7 +155,7 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
     */
-   return queryInterface.bulkInsert('Users', newSeed, {});
+   return queryInterface.bulkInsert(options, newSeed, {});
   },
 
   async down (queryInterface, Sequelize) {
